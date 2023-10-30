@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/frontend/style/esilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROVA DSWII</title>
+</head>
+<body>
+    <div class="main">
+        <label id="label" for="">escreva algo</label>
+        <br>
+        <input id="input" type="text">
+        <div class="botoes">
+            <button type="submit" onclick="adicionar()">Adicionar</button>
+            <button type="submit">Deletar</button>
+            <button type="submit">Atualizar</button>
+            <button type="submit">Selecionar</button>
+        </div>
+        <div class="operacao">
+            <p id="resposta"></p>
+        </div>
+    </div>
+</body>
+<script>
+    function adicionar(){
+        document.getElementById('resposta').innerHTML = '';
+        let nome = document.getElementById('input').value
+        
+        document.getElementById('resposta').innerHTML = 'oi ' + nome;        
+    }
+</script>
+</html>
